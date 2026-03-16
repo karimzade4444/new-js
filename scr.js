@@ -30,7 +30,6 @@ cards.forEach((card) => {
   div.append(p, likeBtn, deleteBtn);
   container.append(div);
 
-  // смена цвета карточки
   div.onclick = () => {
     if (div.style.backgroundColor === card.color) {
       div.style.backgroundColor = "white";
@@ -38,18 +37,13 @@ cards.forEach((card) => {
       div.style.backgroundColor = card.color;
     }
   };
-
-  // лайк
   likeBtn.onclick = (e) => {
     e.stopPropagation();
     likes++;
     likeBtn.textContent = "❤️ " + likes;
   };
-
-  // удаление карточки
   deleteBtn.onclick = (e) => {
     e.stopPropagation();
-    alert("Удалена карточка: " + card.name);
     div.remove();
   };
 });
