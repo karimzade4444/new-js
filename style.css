@@ -17,10 +17,22 @@
   top: 0;
 }
 
+.box{
+    width: 100%;
+    height: 500px;
+
+}
 .Module{
-    
+width: 30%;
+height: 400px;
+margin: auto;
+background-color: aqua;
+margin-top: 100px;    
+border-radius: 20px;
+position: relative;
     
 }
+.Create
 
 .inpCard{
     display: none;
