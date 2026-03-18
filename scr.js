@@ -31,3 +31,8 @@ function handleDeleteFruit(id) {
 }
 
 render();
+
+let module = document.querySelector(".Module")
+function modul(){
+  
+}

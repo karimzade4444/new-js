@@ -16,3 +16,11 @@
   right: 0;
   top: 0;
 }
+
+.Module{
+    width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+}
