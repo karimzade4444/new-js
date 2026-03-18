@@ -10,16 +10,24 @@ function render() {
   container.innerHTML = "";
   cards.forEach((el) => {
     let div = document.createElement("div");
+    div.classList.add("card");
     div.style.backgroundColor = el.color;
     const pName = document.createElement("p");
     pName.textContent = el.name;
-    div.append(pName);
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "X";
+    deleteButton.classList.add("deleteButton");
+    deleteButton.onclick = () => {
+      handleDeleteFruit(el.id);
+    };
+    div.append(pName, deleteButton);
     container.append(div);
   });
 }
 
 function handleDeleteFruit(id) {
-  cards = cards.filter((el) => el.id != id);
+  cards = cards.filter((item) => item.id != id);
+  render();
 }
 
 render();

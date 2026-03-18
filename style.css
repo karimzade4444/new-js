@@ -1,4 +1,18 @@
 .container {
-  display: grid;
-  grid-template-rows: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 60%;
+  margin: auto
+}
+
+.card {
+  position: relative;
+  min-width: 100px;
+  min-height: 100px;
+}
+.deleteButton {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
