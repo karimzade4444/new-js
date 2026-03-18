@@ -17,23 +17,28 @@
   top: 0;
 }
 
-.box{
-    width: 100%;
-    height: 500px;
-
-}
 .Module{
-width: 30%;
-height: 400px;
-margin: auto;
-background-color: aqua;
-margin-top: 100px;    
-border-radius: 20px;
+    width: 100%;
+    height: 600px;
 position: relative;
     
 }
-.Create
-
+.inpBox{
+    width: 30%;
+height: 400px;
+background-color: aqua;
+border-radius: 20px;
+position: absolute;
+right: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(50%);
+}
 .inpCard{
-    
+    position: relative;
+}
+.CloseCreateModal{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 20px 0 0;
 }
