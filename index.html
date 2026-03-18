@@ -8,25 +8,35 @@
   </head>
   <body>
     <div class="CreateMod">
-        <input type="text" placeholder="Search">
-        <button>Создать</button>
+      <input type="text" placeholder="Search" class="Search" />
+      <button class="crmod">Создать</button>
     </div>
     <div class="container"></div>
-
-    
-    <div class="Module"
-    >
+    <img src="" alt="" class="banka" />
+    <div class="Module">
       <div class="inpBox">
         <div class="inpCard">
-            <div class="inptext">
-       <input type="text" placeholder="name">
-       <input type="text" placeholder="color">
-       </div>
-       <button class="CloseCreateModal">X</button>
-    
-       <button class="CancelModal">Отмена</button>
-       <button class="CreateModal">Создать</button>
+          <div class="inptext">
+            <input type="text" placeholder="name" class="name" />
+            <input type="text" placeholder="color" class="color" />
+          </div>
+          <button class="CloseCreateModal">X</button>
+
+          <button class="CancelModal">Отмена</button>
+          <button class="CreateModal">Создать</button>
+        </div>
       </div>
+    </div>
+
+    <div class="editModal">
+      <div>
+        <input type="hidden" class="id" />
+        <input type="text" class="editNameInput" />
+        <input type="text" class="editColorInput" />
+      </div>
+      <div>
+        <button class="canselEditModal">cansel</button>
+        <button class="editFruitButton">ediit</button>
       </div>
     </div>
     <script src="scr.js"></script>
