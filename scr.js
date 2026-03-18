@@ -35,4 +35,19 @@ render();
 let module = document.querySelector(".Module")
 function modul(){
   
+  let createButton = document.querySelector(".Create")
+  createButton.onclick=()=>{
+
+    let inputName = document.createElement("input")
+    inputName.placeholder = "name"
+    let inputColor = document.createElement("input")
+    inputColor.placeholder = "color"
+    let DeleteInput = document.createElement("button")
+    DeleteInput.textContent="X";
+    module.append(inputName,inputColor,DeleteInput)
+    DeleteInput.onclick=()=>{
+      
+    }
+  }
 }
+modul()
