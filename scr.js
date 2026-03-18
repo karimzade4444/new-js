@@ -22,6 +22,7 @@ function render() {
     };
     div.append(pName, deleteButton);
     container.append(div);
+    
   });
 }
 
@@ -32,22 +33,11 @@ function handleDeleteFruit(id) {
 
 render();
 
-let module = document.querySelector(".Module")
-function modul(){
-  
-  let createButton = document.querySelector(".Create")
-  createButton.onclick=()=>{
+let createbtn = document.querySelector(".Create")
+let inpcard  = document.querySelector(".inpCard")
 
-    let inputName = document.createElement("input")
-    inputName.placeholder = "name"
-    let inputColor = document.createElement("input")
-    inputColor.placeholder = "color"
-    let DeleteInput = document.createElement("button")
-    DeleteInput.textContent="X";
-    module.append(inputName,inputColor,DeleteInput)
-    DeleteInput.onclick=()=>{
-      
-    }
-  }
+createbtn.onclick=()=>{
+  inpcard.style.display="block"
 }
-modul()
+
+
