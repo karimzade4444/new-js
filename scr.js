@@ -35,9 +35,14 @@ render();
 
 let createbtn = document.querySelector(".Create")
 let inpcard  = document.querySelector(".inpCard")
-
+let closecr = document.querySelector(".CloseCreate")
 createbtn.onclick=()=>{
   inpcard.style.display="block"
 }
+
+closecr.onclick=()=>{
+  inpcard.style.display = "none"
+}
+
 
 
